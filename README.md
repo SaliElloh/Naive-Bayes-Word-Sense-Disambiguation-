@@ -4,19 +4,17 @@ Naive Bayes Word Sense Disambiguation is a computational technique used to resol
 
 # Example Input/Output:
 Input: multiple instances (sentences) of the ambigous word we are trying to examine (example, bass):
+
  instance id="bass.1000001" docsrc = "BNC/A16"
+ 
  answer instance="bass.1000001" senseid="bass%fish
  context
- It goes without .... We made the non-slip surfaces by stippling the tops with a  <head>bass</head>  broom  a fairly new one works best. 
- /context
- /instance
  
- <instance id="bass.1000002" docsrc = "BNC/A1H">
- <answer instance="bass.1000002" senseid="bass%music"/>
- <context>
- Like many young American composers he studied with Nadia Boulanger, .... <head>bass</head> . 
- </context>
- </instance>
+ It goes without .... We made the non-slip surfaces by stippling the tops with a  <head>bass</head>  broom  a fairly new one works best. 
+ 
+ /context
+ 
+ /instance
 
 
 # Example Output:
