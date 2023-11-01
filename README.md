@@ -5,7 +5,7 @@ Naive Bayes Word Sense Disambiguation is a computational technique used to resol
 # Example Input/Output:
 Multiple instances (sentences) of the ambigous word we are trying to examine (example, bass):
 
-Sentence: We made the non-slip surfaces by stippling the tops with a **bass** broom  a fairly new one works best. 
+Example of one sentence: We made the non-slip surfaces by stippling the tops with a **bass** broom  a fairly new one works best. 
 
 # Example Output:
 the count of each sense in bass.wsd is {'bass%fish': 317, 'bass%music': 3182} 
