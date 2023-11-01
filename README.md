@@ -29,23 +29,30 @@ the average accuracy for bass.wsd is 80.0
 # Agorithm Steps:
 
 ## 1.Data Preprocessing:
+
 Stop words, punctuation, and stemming are removed to extract meaningful features.
 Lowercasing and removal of extra spaces are performed.
-Data Processing:
 
-## 2. Data is read and grouped by instance ID and relevant context.
+## 2.Data Processing:
+ Data is read and grouped by instance ID and relevant context.
 Word instances are counted for each sense in the training data.
+
 ## 3.Model Training:
 Dictionaries are created for each sense, storing sentences associated with each sense.
 Word counts for each sense and the total word count are calculated.
-4.Model Testing:
+
+## 4.Model Testing:
+
 The model is tested using counts from the training data.
 Probabilities for each sense are calculated using the Naive Bayes formula.
 The sense with the highest probability is assigned to the test instances.
-5.K-Fold Cross-Validation:
+
+## 5.K-Fold Cross-Validation:
+
 The dataset is divided into k folds for iterative training and testing.
 Accuracies are calculated for each fold, and the mean accuracy is determined.
-6.Output Generation:
+
+## 6.Output Generation:
 Predicted senses for each fold are stored in an output file.
 Key details about the dataset, sense counts, fold accuracies, and average accuracy are printed for each file.
 
@@ -59,6 +66,7 @@ motion.wsd
 palm.wsd
 tank.wsd
 plant.wsd
+
 WSD.py:
 Contains the implementation of Naive Bayes for word sense disambiguation.
 
