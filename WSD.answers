@@ -1,0 +1,62 @@
+NAIVE BAYES WORD SENSE DISAMBIGUATION:
+
+1. program completion:
+the program is complete
+The Naive Bayes Word Disambiguation (NBWD) algorithm is implemented by the code that is provided. It entails
+counting instances, reading and preprocessing data from multiple files, and training the algorithm to distinguish between word senses.
+
+2. plant.wsd
+
+3. Accuracies:
+the accuracy of each fold of plant.wsd are [36.11111111111111, 38.88888888888889, 42.857142857142854, 30.555555555555557, 72.22222222222221]
+the average accuracy for plant.wsd is 44.126984126984134
+
+
+4.Errors:
+
+a. 'mid late 1970s simply rules groupings parents statefinanced multidenominational school channels communication matters department education relevant diocesan department church board housing estate built diocese informed development planning stage diocesan office school extension existing school arrangement unchanged early years state natural protestant community school <head>plant</head>
+    Many of the words in this sentence exhibit considerable ambiguity, lacking a clear association with either "plant"
+     as a factory or "plant" as a living organism. For instance, the word "communication" is relatively neutral,
+     while a term like "ecosystem" would more strongly suggest a connection to a living plant.
+
+b. owned church church body', 'bodfari foods processor supplier liquid milk year company pretax profits 19m jusrol invests potato product manufacturer jusrol invested 15m potato manufacturing <head>plant</head>
+    In this context, the presence of the word "potato" should have favored the living plant sense,
+    but the problem might lie in how the sentence was segmented and preprocessed, or the count of times that potato mightve appeared in the whole data
+
+c. amble northumberland end month manufacturing capacity expected increase threefold result sales marketing director joe weston ideal change catering butcher ideal meat supplies moved smithfield market site premises north london company achieved grade accreditation plant evaluation committee national association catering butchers', 'head brewer clarks helped lot ryburns owner harold coburn small brewers competitors lot camaraderie harold started ryburn july 1990 redundant payoff money buy barrel capacity <head>plant</head>',
+This sentence is somewhat lengthy, potentially leading to very small probabilities during computation, making them challenging to manage.
+
+
+ADDITIONAL WORD SENSE DISAMBIGUATION:
+
+1. the program is complate
+2. bass.wsd, crane.wsd, motion.wsd, palm.wsd, tank.wsd:
+3. the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889, 94.44444444444444, 94.44444444444444, 100.0]
+the average accuracy for bass.wsd is 80.0
+the accuracy of each fold of crane.wsd are [31.57894736842105, 73.68421052631578, 73.68421052631578, 78.94736842105263, 84.21052631578947]
+the average accuracy for crane.wsd is 68.42105263157893
+the accuracy of each fold of motion.wsd are [48.64864864864865, 47.22222222222222, 13.513513513513514, 24.324324324324326, 8.108108108108109]
+the average accuracy for motion.wsd is 28.363363363363362
+the accuracy of each fold of palm.wsd are [67.56756756756756, 35.13513513513514, 32.432432432432435, 27.027027027027028, 13.513513513513514]
+the average accuracy for palm.wsd is 35.135135135135144
+the accuracy of each fold of tank.wsd are [56.75675675675676, 29.72972972972973, 27.027027027027028, 27.027027027027028, 35.13513513513514]
+the average accuracy for tank.wsd is 35.13513513513514
+
+
+ISSUES WITH CODE:
+for a lot of the cases i got low accuracies, and that could be attributed to the following:
+1. data division:
+    Uneven sense distribution impacted accuracy, as seen in plant.wsd.
+    ex: the count of each sense in plant.wsd is {'plant%factory': 5123, 'plant%living': 2406}
+2. length datapoints:
+    Long sentences affected probability calculation; better segmentation was needed.
+3.  K fold:
+    in some cases,the way the data was divided caused the the fold accuracy to vary, indicating a
+    noneven distribution of the senses within the file
+4. "overfitting": g: Large datasets showed significantly lower accuracy due to diminishing probabilities over multiple
+training iterations.
+5. Preprocessing:
+    more preprocessing steps shouldve been done that are specific to each of the cases we are dealing with
+
+
+PSEUDOCODE:
