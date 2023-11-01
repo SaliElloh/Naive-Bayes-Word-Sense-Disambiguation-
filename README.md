@@ -28,7 +28,7 @@ the average accuracy for bass.wsd is 80.0
 
 # Agorithm Steps:
 
-## 1.Data Preprocessing:
+### 1.Data Preprocessing:
 
 Stop words, punctuation, and stemming are removed to extract meaningful features.
 Lowercasing and removal of extra spaces are performed.
