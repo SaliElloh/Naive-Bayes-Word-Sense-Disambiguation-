@@ -9,7 +9,9 @@ Example of one sentence: We made the non-slip surfaces by stippling the tops wit
 
 # Example Output:
 the count of each sense in bass.wsd is {'bass%fish': 317, 'bass%music': 3182} 
+
 the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889, 94.44444444444444, 94.44444444444444, 100.0]
+
 the average accuracy for bass.wsd is 80.0
 
 
