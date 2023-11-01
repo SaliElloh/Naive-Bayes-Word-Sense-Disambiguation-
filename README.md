@@ -49,16 +49,16 @@ Key details about the dataset, sense counts, fold accuracies, and average accura
 #  Files in Repository:
 The repository includes six training files for each ambiguous word, aimed at determining their respective senses:
 
-bass.wsd
-crane.wsd
-motion.wsd
-palm.wsd
-tank.wsd
-plant.wsd
-
-WSD.py:
-Contains the implementation of Naive Bayes for word sense disambiguation.
-
-WSD.answers:
-A text file providing detailed explanations for the obtained accuracies.
+  1. bass.wsd
+  2. crane.wsd
+  3. motion.wsd
+  4. palm.wsd
+  5. tank.wsd
+  6. plant.wsd
+  
+  7. WSD.py:
+  Contains the implementation of Naive Bayes for word sense disambiguation.
+  
+  8. WSD.answers:
+  A text file providing detailed explanations for the obtained accuracies.
 
