@@ -6,15 +6,16 @@
 
 
 <!-- ABOUT THE PROJECT -->
+# About the Project:
 
-### Introduction
+## Introduction:
 
 This project implements a Naive Bayes algorithm for Word Sense Disambiguation (WSD) without using external libraries such as scikit-learn, pandas, or NLTK. The primary goal is to classify instances of the word "plant" based on its context within a sentence, using a dataset from the British National Corpus (BNC). The project further extends to other words such as "bass," "crane," "motion," "palm," and "tank."
 
 
 my LinkedIn: [![LinkedIn][LinkedIn.js]][LinkedIn-url]
 
-### Project Overview:
+## Project Overview:
 
 Word Sense Disambiguation is the task of determining the correct sense (meaning) of a word in a given context when the word has multiple meanings. In this project, the focus is on disambiguating the sense of the word "plant."
 
@@ -32,19 +33,16 @@ The primary dataset used in this project consists of instances of the word "plan
 
 
   <!-- GETTING STARTED -->
-## Getting Started
+# Getting Started:
 
 ### Steps to run the code:
 
-1. Download files "human_action_recognition_and_pose_detection.ipynb" and "human_action_recognition.ipynb"
-2. Insure python and Jupyter Notebook are installed. Alteratively, you can run using Google Colab
-3. Insure necessary libraries and frameworks are downloaded
 
-Example:
 
 <!-- METHODOLOGY -->
+# Methodology:
 
-# Agorithm Steps:
+## Agorithm Steps:
 
 ### 1.Data Preprocessing:
 * Feature Extraction: Stop words, punctuation, and stemming are removed to retain only meaningful words.
