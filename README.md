@@ -1,5 +1,202 @@
+<div align="center">
+  <h3 align="center">A brief Read.me introducing the project and its contents</h3>
+    <br />
+  </p>
+</div>
+
+
+<!-- ABOUT THE PROJECT -->
+
+### Introduction
+
+This project implements a Naive Bayes algorithm for Word Sense Disambiguation (WSD) without using external libraries such as scikit-learn, pandas, or NLTK. The primary goal is to classify instances of the word "plant" based on its context within a sentence, using a dataset from the British National Corpus (BNC). The project further extends to other words such as "bass," "crane," "motion," "palm," and "tank."
+
+
+my LinkedIn: [![LinkedIn][LinkedIn.js]][LinkedIn-url]
+
+### Project Overview:
+
+Word Sense Disambiguation is the task of determining the correct sense (meaning) of a word in a given context when the word has multiple meanings. In this project, the focus is on disambiguating the sense of the word "plant."
+
+### Naive Bayes Algorithm:
+
+The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem. It assumes that the presence of a particular feature in a class is independent of the presence of any other feature (the "naive" assumption). In this project, the words surrounding the target word ("plant" in the first task) are used as features to predict the word's sense.
+
+###  Dataset:
+
+The primary dataset used in this project consists of instances of the word "plant" drawn from the British National Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory.
+
+
+<!-- METHODOLOGY -->
+
+
+
+  <!-- GETTING STARTED -->
+## Getting Started
+
+### Steps to run the code:
+
+1. Download files "human_action_recognition_and_pose_detection.ipynb" and "human_action_recognition.ipynb"
+2. Insure python and Jupyter Notebook are installed. Alteratively, you can run using Google Colab
+3. Insure necessary libraries and frameworks are downloaded
+
+Example:
+
+<!-- METHODOLOGY -->
+
+# Agorithm Steps:
+
+### 1.Data Preprocessing:
+* Feature Extraction: Stop words, punctuation, and stemming are removed to retain only meaningful words.
+* Normalization: Convert text to lowercase and remove any extra spaces for consistency.
+
+### 2.Data Processing:
+* Instance Grouping: The data is read and grouped by instance ID, associating each target word with its surrounding context.
+* Sense Counting: Word instances are counted for each sense in the training data to build a frequency distribution.
+
+### 3.Model Training:
+* Dictionary Creation: Separate dictionaries are created for each sense, storing the sentences related to each sense.
+* Word Counting: Calculate the word counts for each sense and the total word count in the training set.
+
+### 4.Model Testing:
+
+* Probability Calculation: Using the Naive Bayes formula, probabilities are calculated for each sense based on the training data.
+* Sense Assignment: The sense with the highest probability is assigned to each instance in the test data.
+
+
+### 5.K-Fold Cross-Validation:
+
+* Dataset Splitting: The dataset is divided into k folds, with one fold used for testing and the remaining folds for training.
+* Accuracy Evaluation: Accuracies are calculated for each fold, and the mean accuracy is determined to assess overall model performance.
+
+### 6.Output Generation:
+* Prediction Storage: The predicted senses for each test instance are stored in an output file.
+* Result Summary: Key details about the dataset, sense counts, fold accuracies, and average accuracy are printed for each file.
+
+
+
+<!-- Results -->
+
+## Comparitive Analysis:
+
+### Validation Accuracy vs. Training Accuracy:
+
+### Precision and Recall:
+
+<!-- Built With -->
+## Built With:
+
+The frameworks and libraries used within this project are:
+
+[![Pafy][Pafy.js]][Pafy-url]
+[![OS][OS.js]][OS-url]
+[![OpenCV][OpenCV.js]][OpenCV-url]
+[![Math][Math.js]][Math-url]
+[![Random][Random.js]][Random-url]
+[![NumPy][NumPy.js]][NumPy-url]
+[![Datetime][Datetime.js]][Datetime-url]
+[![TensorFlow][TensorFlow.js]][TensorFlow-url]
+[![Deque][Deque.js]][Deque-url]
+[![Matplotlib][Matplotlib.js]][Matplotlib-url]
+[![Keras][Keras.js]][Keras-url]
+[![MoviePy][MoviePy.js]][MoviePy-url]
+[![Scikit-learn][Scikit-learn.js]][Scikit-learn-url]
+
+<!-- LICENSE -->
+## License
+
+No License used.
+
+<!-- CONTACT -->
+## Contact
+
+Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsali@gmail.com
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[LinkedIn.js]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[LinkedIn-url]: https://www.linkedin.com/in/salielloh12/
+[Tensorflow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
+[Tensorflow-url]: https://www.tensorflow.org/
+[Keras.js]: https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white
+[Keras-url]: https://keras.io/
+[NumPy.js]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
+[NumPy-url]: https://numpy.org/
+[Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
+[Matplotlib-url]: https://matplotlib.org/
+
+[Python.js]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org/
+
+[Pafy.js]: https://img.shields.io/badge/Pafy-FF6600?style=for-the-badge
+[Pafy-url]: https://github.com/mps-youtube/pafy
+
+[OS.js]: https://img.shields.io/badge/OS-44a833?style=for-the-badge
+[OS-url]: https://docs.python.org/3/library/os.html
+
+[OpenCV.js]: https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white
+[OpenCV-url]: https://opencv.org/
+
+[Math.js]: https://img.shields.io/badge/Math-000000?style=for-the-badge
+[Math-url]: https://docs.python.org/3/library/math.html
+
+[Random.js]: https://img.shields.io/badge/Random-44a833?style=for-the-badge
+[Random-url]: https://docs.python.org/3/library/random.html
+
+[NumPy.js]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
+[NumPy-url]: https://numpy.org/
+
+[Datetime.js]: https://img.shields.io/badge/Datetime-44a833?style=for-the-badge
+[Datetime-url]: https://docs.python.org/3/library/datetime.html
+
+[TensorFlow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
+[TensorFlow-url]: https://www.tensorflow.org/
+
+[Deque.js]: https://img.shields.io/badge/Deque-44a833?style=for-the-badge
+[Deque-url]: https://docs.python.org/3/library/collections.html#collections.deque
+
+[Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
+[Matplotlib-url]: https://matplotlib.org/
+
+[Keras.js]: https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white
+[Keras-url]: https://keras.io/
+
+[MoviePy.js]: https://img.shields.io/badge/MoviePy-FF4500?style=for-the-badge
+[MoviePy-url]: https://zulko.github.io/moviepy/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Naive-Bayes-Word-Sense-Disambiguation-
-Naive Bayes Word Sense Disambiguation is a computational technique used to resolve the ambiguity present in natural language, where a word can have multiple meanings depending on its context. Leveraging the principles of the Naive Bayes algorithm, this approach aims to accurately assign the most appropriate meaning to a word by analyzing the surrounding words or context. By considering the probabilities of different word senses given the context, Naive Bayes Word Sense Disambiguation offers a valuable solution to enhancing the precision and comprehension of language processing systems, facilitating more accurate and context-aware interpretations of textual data
 
 
 # Example Input/Output:
@@ -14,36 +211,6 @@ the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889,
 
 the average accuracy for bass.wsd is 80.0
 
-
-# Agorithm Steps:
-
-### 1.Data Preprocessing:
-
-Stop words, punctuation, and stemming are removed to extract meaningful features.
-Lowercasing and removal of extra spaces are performed.
-
-### 2.Data Processing:
- Data is read and grouped by instance ID and relevant context.
-Word instances are counted for each sense in the training data.
-
-### 3.Model Training:
-Dictionaries are created for each sense, storing sentences associated with each sense.
-Word counts for each sense and the total word count are calculated.
-
-### 4.Model Testing:
-
-The model is tested using counts from the training data.
-Probabilities for each sense are calculated using the Naive Bayes formula.
-The sense with the highest probability is assigned to the test instances.
-
-### 5.K-Fold Cross-Validation:
-
-The dataset is divided into k folds for iterative training and testing.
-Accuracies are calculated for each fold, and the mean accuracy is determined.
-
-### 6.Output Generation:
-Predicted senses for each fold are stored in an output file.
-Key details about the dataset, sense counts, fold accuracies, and average accuracy are printed for each file.
 
 
 #  Files in Repository:
