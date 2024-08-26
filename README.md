@@ -101,9 +101,9 @@ the average accuracy for bass.wsd is 80.0
 
 The frameworks and libraries used within this project are:
 
-[![Python][Python.js]][Python-url]
-[![NumPy][NumPy.js]][NumPy-url]
-[![Datetime][Datetime.js]][Datetime-url]
+* [![Python][Python.js]][Python-url]
+* [![NumPy][NumPy.js]][NumPy-url]
+* [![Datetime][Datetime.js]][Datetime-url]
 
 
 <!-- CONTACT -->
