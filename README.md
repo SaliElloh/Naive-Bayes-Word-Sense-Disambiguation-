@@ -94,11 +94,17 @@ The average accuracy for `bass.wsd` is `80.0%`.
 ### Steps to run the code:
 
 
-
-
-
 <!-- Results -->
 
+## Additional Word Sense Disambiguation Results
+
+| **Word**  | **Accuracy of Each Fold (%)**                                                                                                                                       | **Average Accuracy (%)** |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| `bass.wsd`  | [22.22, 88.89, 94.44, 94.44, 100.0]                                                                                                                                | 80.00                    |
+| `crane.wsd` | [31.58, 73.68, 73.68, 78.95, 84.21]                                                                                                                                | 68.42                    |
+| `motion.wsd`| [48.65, 47.22, 13.51, 24.32, 8.11]                                                                                                                                 | 28.36                    |
+| `palm.wsd`  | [67.57, 35.14, 32.43, 27.03, 13.51]                                                                                                                                | 35.14                    |
+| `tank.wsd`  | [56.76, 29.73, 27.03, 27.03, 35.14]      
 
 <!-- Built With -->
 
@@ -131,52 +137,6 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 
 [Datetime.js]: https://img.shields.io/badge/Datetime-44a833?style=for-the-badge
 [Datetime-url]: https://docs.python.org/3/library/datetime.html
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Naive-Bayes-Word-Sense-Disambiguation-
-
-
-# Example Input/Output:
-Multiple instances (sentences) of the ambigous word we are trying to examine (example, bass):
-
-Example of one sentence: We made the non-slip surfaces by stippling the tops with a **bass** broom  a fairly new one works best. 
-
-# Example Output:
-the count of each sense in bass.wsd is {'bass%fish': 317, 'bass%music': 3182} 
-
-the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889, 94.44444444444444, 94.44444444444444, 100.0]
-
-the average accuracy for bass.wsd is 80.0
-
 
 
 #  Files in Repository:
