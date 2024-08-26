@@ -1,9 +1,8 @@
-<div align="center">
-  <h3 align="center">A brief Read.me introducing the project and its contents</h3>
-    <br />
-  </p>
-</div>
+# Naive-Bayes-Word-Sense-Disambiguation-
 
+For more information about me, please visit my LinkedIn:
+
+[![LinkedIn][LinkedIn.js]][LinkedIn-url]
 
 <!-- ABOUT THE PROJECT -->
 
@@ -12,9 +11,6 @@
 ### Introduction:
 
 This project implements a Naive Bayes algorithm for Word Sense Disambiguation (WSD) without using external libraries such as scikit-learn, pandas, or NLTK. The primary goal is to classify instances of the word "plant" based on its context within a sentence, using a dataset from the British National Corpus (BNC). The project further extends to other words such as "bass," "crane," "motion," "palm," and "tank."
-
-
-my LinkedIn:  [![LinkedIn][LinkedIn.js]][LinkedIn-url]
 
 ### Project Overview:
 
@@ -26,6 +22,7 @@ The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem.
 
 
 <!-- Dataset -->
+
 ##  Dataset:
 
 The primary dataset used in this project consists of instances of the word "plant" drawn from the British National Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory.
@@ -43,32 +40,31 @@ Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the
 
 ## Methodology:
 
-## Agorithm Steps:
+### Agorithm Steps:
 
-### 1.Data Preprocessing:
+1.Data Preprocessing:
 * Feature Extraction: Stop words, punctuation, and stemming are removed to retain only meaningful words.
 * Normalization: Convert text to lowercase and remove any extra spaces for consistency.
 
-### 2.Data Processing:
+2.Data Processing:
 * Instance Grouping: The data is read and grouped by instance ID, associating each target word with its surrounding context.
 * Sense Counting: Word instances are counted for each sense in the training data to build a frequency distribution.
 
-### 3.Model Training:
+3.Model Training:
 * Dictionary Creation: Separate dictionaries are created for each sense, storing the sentences related to each sense.
 * Word Counting: Calculate the word counts for each sense and the total word count in the training set.
 
-### 4.Model Testing:
+4.Model Testing:
 
 * Probability Calculation: Using the Naive Bayes formula, probabilities are calculated for each sense based on the training data.
 * Sense Assignment: The sense with the highest probability is assigned to each instance in the test data.
 
-
-### 5.K-Fold Cross-Validation:
+5.K-Fold Cross-Validation:
 
 * Dataset Splitting: The dataset is divided into k folds, with one fold used for testing and the remaining folds for training.
 * Accuracy Evaluation: Accuracies are calculated for each fold, and the mean accuracy is determined to assess overall model performance.
 
-### 6.Output Generation:
+6.Output Generation:
 * Prediction Storage: The predicted senses for each test instance are stored in an output file.
 * Result Summary: Key details about the dataset, sense counts, fold accuracies, and average accuracy are printed for each file.
 
@@ -87,6 +83,7 @@ the average accuracy for bass.wsd is 80.0
 
 
   <!-- GETTING STARTED -->
+  
 ## Getting Started:
 
 ### Steps to run the code:
@@ -99,21 +96,18 @@ the average accuracy for bass.wsd is 80.0
 
 
 <!-- Built With -->
+
 ## Built With:
-
-
 
 The frameworks and libraries used within this project are:
 
 [![Python][Python.js]][Python-url]
 [![NumPy][NumPy.js]][NumPy-url]
+[![Datetime][Datetime.js]][Datetime-url]
 
-<!-- LICENSE -->
-## License
-
-No License used.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsali@gmail.com
@@ -123,54 +117,15 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [LinkedIn.js]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [LinkedIn-url]: https://www.linkedin.com/in/salielloh12/
-[Tensorflow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
-[Tensorflow-url]: https://www.tensorflow.org/
-[Keras.js]: https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white
-[Keras-url]: https://keras.io/
-[NumPy.js]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
-[NumPy-url]: https://numpy.org/
-[Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
-[Matplotlib-url]: https://matplotlib.org/
 
 [Python.js]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
-
-[Pafy.js]: https://img.shields.io/badge/Pafy-FF6600?style=for-the-badge
-[Pafy-url]: https://github.com/mps-youtube/pafy
-
-[OS.js]: https://img.shields.io/badge/OS-44a833?style=for-the-badge
-[OS-url]: https://docs.python.org/3/library/os.html
-
-[OpenCV.js]: https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white
-[OpenCV-url]: https://opencv.org/
-
-[Math.js]: https://img.shields.io/badge/Math-000000?style=for-the-badge
-[Math-url]: https://docs.python.org/3/library/math.html
-
-[Random.js]: https://img.shields.io/badge/Random-44a833?style=for-the-badge
-[Random-url]: https://docs.python.org/3/library/random.html
 
 [NumPy.js]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
 [NumPy-url]: https://numpy.org/
 
 [Datetime.js]: https://img.shields.io/badge/Datetime-44a833?style=for-the-badge
 [Datetime-url]: https://docs.python.org/3/library/datetime.html
-
-[TensorFlow.js]: https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
-[TensorFlow-url]: https://www.tensorflow.org/
-
-[Deque.js]: https://img.shields.io/badge/Deque-44a833?style=for-the-badge
-[Deque-url]: https://docs.python.org/3/library/collections.html#collections.deque
-
-[Matplotlib.js]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
-[Matplotlib-url]: https://matplotlib.org/
-
-[Keras.js]: https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white
-[Keras-url]: https://keras.io/
-
-[MoviePy.js]: https://img.shields.io/badge/MoviePy-FF4500?style=for-the-badge
-[MoviePy-url]: https://zulko.github.io/moviepy/
-
 
 
 
