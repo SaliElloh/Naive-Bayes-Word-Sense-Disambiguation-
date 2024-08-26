@@ -27,6 +27,12 @@ The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem.
 
 A total of six datasets were used in this project, one for each word which are **bass**, **crane**, **motion**, **palm**, **tank**, and **plant** which are drawn fom the British NAtional Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory. 
 
+### Data Example:
+
+![image](https://github.com/user-attachments/assets/c1f9ac7e-8d7e-415f-b826-f5c0bee20d79)
+
+<!-- METHODOLOGY -->
+
 ## Files:
 
 The repository includes six training files for each ambiguous word, aimed at determining their respective senses:
@@ -39,13 +45,6 @@ The repository includes six training files for each ambiguous word, aimed at det
 7. WSD.py: Contains the implementation of Naive Bayes for word sense disambiguation.
 8. WSD.answers: A text file providing detailed explanations for the obtained accuracies.
 
-
-
-### Data Example:
-
-![image](https://github.com/user-attachments/assets/c1f9ac7e-8d7e-415f-b826-f5c0bee20d79)
-
-<!-- METHODOLOGY -->
 
 ## Methodology
 
@@ -99,13 +98,6 @@ b. **Output**:
 * The average accuracy for `bass.wsd` is `80.0%`.
    
 
-  <!-- GETTING STARTED -->
-  
-## Getting Started:
-
-### Steps to run the code:
-
-
 <!-- Results -->
 
 ## Results:
@@ -117,6 +109,13 @@ b. **Output**:
 | `motion.wsd`| [48.65, 47.22, 13.51, 24.32, 8.11]                                                                                                                                 | 28.36                    |
 | `palm.wsd`  | [67.57, 35.14, 32.43, 27.03, 13.51]                                                                                                                                | 35.14                    |
 | `tank.wsd`  | [56.76, 29.73, 27.03, 27.03, 35.14]                                                                                                                                | 35.14                    |
+
+
+  <!-- GETTING STARTED -->
+  
+## Getting Started:
+
+### Steps to run the code:
 
 <!-- Built With -->
 
