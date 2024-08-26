@@ -103,10 +103,8 @@ b. **Output**:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/Naive-Bayes-Word-Sense-Disambiguation.git
+   git clone https://github.com/SaliElloh/Naive-Bayes-Word-Sense-Disambiguation-.git
    cd Naive-Bayes-Word-Sense-Disambiguation
-
-
 
 <!-- Results -->
 
