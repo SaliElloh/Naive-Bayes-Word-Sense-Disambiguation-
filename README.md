@@ -13,7 +13,7 @@
 This project implements a Naive Bayes algorithm for Word Sense Disambiguation (WSD) without using external libraries such as scikit-learn, pandas, or NLTK. The primary goal is to classify instances of the word "plant" based on its context within a sentence, using a dataset from the British National Corpus (BNC). The project further extends to other words such as "bass," "crane," "motion," "palm," and "tank."
 
 
-my LinkedIn: [![LinkedIn][LinkedIn.js]][LinkedIn-url]
+my LinkedIn:  [![LinkedIn][LinkedIn.js]][LinkedIn-url]
 
 ## Project Overview:
 
