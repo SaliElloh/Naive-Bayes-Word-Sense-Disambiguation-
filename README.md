@@ -6,16 +6,17 @@
 
 
 <!-- ABOUT THE PROJECT -->
-# About the Project:
 
-## Introduction:
+## About the Project:
+
+### Introduction:
 
 This project implements a Naive Bayes algorithm for Word Sense Disambiguation (WSD) without using external libraries such as scikit-learn, pandas, or NLTK. The primary goal is to classify instances of the word "plant" based on its context within a sentence, using a dataset from the British National Corpus (BNC). The project further extends to other words such as "bass," "crane," "motion," "palm," and "tank."
 
 
 my LinkedIn:  [![LinkedIn][LinkedIn.js]][LinkedIn-url]
 
-## Project Overview:
+### Project Overview:
 
 Word Sense Disambiguation is the task of determining the correct sense (meaning) of a word in a given context when the word has multiple meanings. In this project, the focus is on disambiguating the sense of the word "plant."
 
@@ -23,7 +24,9 @@ Word Sense Disambiguation is the task of determining the correct sense (meaning)
 
 The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem. It assumes that the presence of a particular feature in a class is independent of the presence of any other feature (the "naive" assumption). In this project, the words surrounding the target word ("plant" in the first task) are used as features to predict the word's sense.
 
-###  Dataset:
+
+<!-- Dataset -->
+##  Dataset:
 
 The primary dataset used in this project consists of instances of the word "plant" drawn from the British National Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory.
 
@@ -38,16 +41,7 @@ Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the
 
 <!-- METHODOLOGY -->
 
-
-  <!-- GETTING STARTED -->
-# Getting Started:
-
-### Steps to run the code:
-
-
-
-<!-- METHODOLOGY -->
-# Methodology:
+## Methodology:
 
 ## Agorithm Steps:
 
@@ -89,6 +83,16 @@ the count of each sense in bass.wsd is {'bass%fish': 317, 'bass%music': 3182}
 the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889, 94.44444444444444, 94.44444444444444, 100.0]
 
 the average accuracy for bass.wsd is 80.0
+
+
+
+  <!-- GETTING STARTED -->
+## Getting Started:
+
+### Steps to run the code:
+
+
+
 
 
 <!-- Results -->
