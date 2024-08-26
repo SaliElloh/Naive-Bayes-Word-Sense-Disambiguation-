@@ -106,10 +106,16 @@ b. **Output**:
    git clone https://github.com/SaliElloh/Naive-Bayes-Word-Sense-Disambiguation-.git
    cd Naive-Bayes-Word-Sense-Disambiguation
 
-1. **run the Script**:
+2. **run the Script**:
 
    ```bash
    python WSD.py
+
+3. **View Results**:
+   The predicted senses and accuracy metrics will be displayed in the console and saved to output files.
+
+
+   
 
 
 <!-- Results -->
