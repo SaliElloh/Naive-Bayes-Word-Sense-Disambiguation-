@@ -32,7 +32,7 @@ The primary dataset used in this project consists of instances of the word "plan
 <instance id="plant.1000000" docsrc = "BNC/A07">
 <answer instance="plant.1000000" senseid="plant%factory"/>
 <context>
-Until the mid- and late 1970s, there ....  <head>plant</head>  is owned by the church, or appropriate church body. 
+Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the church, or appropriate church body. 
 </context>
 </instance>
 
