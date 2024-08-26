@@ -111,12 +111,6 @@ b. **Output**:
 | `tank.wsd`  | [56.76, 29.73, 27.03, 27.03, 35.14]                                                                                                                                | 35.14                    |
 
 
-  <!-- GETTING STARTED -->
-  
-## Getting Started:
-
-### Steps to run the code:
-
 <!-- Built With -->
 
 ## Built With:
