@@ -18,7 +18,7 @@ Word Sense Disambiguation is the task of determining the correct sense (meaning)
 
 ### Naive Bayes Algorithm:
 
-The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem. It assumes that the presence of a particular feature in a class is independent of the presence of any other feature (the "naive" assumption). In this project, the words surrounding the target word ("plant" in the first task) are used as features to predict the word's sense.
+The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem. It assumes that the presence of a particular feature in a class is independent of the presence of any other feature (the "naive" assumption). In this project, the words surrounding the target word ("plant" in the first task) are used as features to predict the word's sense. For more information about the algorithm, visit this website:  https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/
 
 
 <!-- Dataset -->
