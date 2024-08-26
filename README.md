@@ -29,12 +29,7 @@ The primary dataset used in this project consists of instances of the word "plan
 
 ### Data Example:
 
-<instance id="plant.1000000" docsrc = "BNC/A07">
-<answer instance="plant.1000000" senseid="plant%factory"/>
-<context>
-Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the church, or appropriate church body. 
-</context>
-</instance>
+![image](https://github.com/user-attachments/assets/c1f9ac7e-8d7e-415f-b826-f5c0bee20d79)
 
 <!-- METHODOLOGY -->
 
