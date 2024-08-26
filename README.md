@@ -40,7 +40,7 @@ Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the
 
 ## Methodology
 
-### Algorithm Steps
+### Algorithm Steps:
 
 1. **Data Preprocessing**:
    - **Feature Extraction**: 
@@ -79,7 +79,7 @@ Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the
    - **Result Summary**: 
      - Print key details about the dataset, sense counts, fold accuracies, and average accuracy.
 
-### Example
+### Example:
 
 **Sentence to be Classified**:  
 *We made the non-slip surfaces by stippling the tops with a **bass** broom—a fairly new one works best.*
