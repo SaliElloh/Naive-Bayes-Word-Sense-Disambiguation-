@@ -25,7 +25,21 @@ The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem.
 
 ##  Dataset:
 
-The primary dataset used in this project consists of instances of the word "plant" drawn from the British National Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory.
+A total of six datasets were used in this project, one for each word which are **bass**, **crane**, **motion**, **palm**, **tank**, and **plant** which are drawn fom the British NAtional Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory. 
+
+## Files:
+
+The repository includes six training files for each ambiguous word, aimed at determining their respective senses:
+1. bass.wsd
+2. crane.wsd
+3. motion.wsd
+4. palm.wsd
+5. tank.wsd
+6. plant.wsd
+7. WSD.py: Contains the implementation of Naive Bayes for word sense disambiguation.
+8. WSD.answers: A text file providing detailed explanations for the obtained accuracies.
+
+
 
 ### Data Example:
 
@@ -138,18 +152,4 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 
 
 #  Files in Repository:
-The repository includes six training files for each ambiguous word, aimed at determining their respective senses:
-
-  1. bass.wsd
-  2. crane.wsd
-  3. motion.wsd
-  4. palm.wsd
-  5. tank.wsd
-  6. plant.wsd
-  
-  7. WSD.py:
-  Contains the implementation of Naive Bayes for word sense disambiguation.
-  
-  8. WSD.answers:
-  A text file providing detailed explanations for the obtained accuracies.
 
