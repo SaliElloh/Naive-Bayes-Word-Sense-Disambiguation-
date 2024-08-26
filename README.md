@@ -25,7 +25,7 @@ The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem.
 
 ##  Dataset:
 
-A total of six datasets were used in this project, one for each word which are **bass**, **crane**, **motion**, **palm**, **tank**, and **plant** which are drawn fom the British NAtional Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory. 
+A total of six datasets were used in this project, one for each word which are **bass**, **crane**, **motion**, **palm**, **tank**, and **plant**. Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory. 
 
 ### Data Example:
 
