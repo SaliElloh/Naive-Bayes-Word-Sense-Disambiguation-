@@ -27,9 +27,16 @@ The Naive Bayes algorithm is a probabilistic classifier based on Bayes' theorem.
 
 The primary dataset used in this project consists of instances of the word "plant" drawn from the British National Corpus (BNC). Each instance is manually annotated with the correct sense of the word, such as plant%living or plant%factory.
 
+### Data Example:
+
+<instance id="plant.1000000" docsrc = "BNC/A07">
+<answer instance="plant.1000000" senseid="plant%factory"/>
+<context>
+Until the mid- and late 1970s, there ....  <head>plant</head>  is owned by the church, or appropriate church body. 
+</context>
+</instance>
 
 <!-- METHODOLOGY -->
-
 
 
   <!-- GETTING STARTED -->
@@ -71,34 +78,31 @@ The primary dataset used in this project consists of instances of the word "plan
 * Prediction Storage: The predicted senses for each test instance are stored in an output file.
 * Result Summary: Key details about the dataset, sense counts, fold accuracies, and average accuracy are printed for each file.
 
+Example:
+
+**Sentence to be Classified** : We made the non-slip surfaces by stippling the tops with a **bass** broom  a fairly new one works best. 
+
+**Output**:
+
+the count of each sense in bass.wsd is {'bass%fish': 317, 'bass%music': 3182} 
+
+the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889, 94.44444444444444, 94.44444444444444, 100.0]
+
+the average accuracy for bass.wsd is 80.0
 
 
 <!-- Results -->
 
-## Comparitive Analysis:
-
-### Validation Accuracy vs. Training Accuracy:
-
-### Precision and Recall:
 
 <!-- Built With -->
 ## Built With:
 
+
+
 The frameworks and libraries used within this project are:
 
-[![Pafy][Pafy.js]][Pafy-url]
-[![OS][OS.js]][OS-url]
-[![OpenCV][OpenCV.js]][OpenCV-url]
-[![Math][Math.js]][Math-url]
-[![Random][Random.js]][Random-url]
+[![Python][Python.js]][Python-url]
 [![NumPy][NumPy.js]][NumPy-url]
-[![Datetime][Datetime.js]][Datetime-url]
-[![TensorFlow][TensorFlow.js]][TensorFlow-url]
-[![Deque][Deque.js]][Deque-url]
-[![Matplotlib][Matplotlib.js]][Matplotlib-url]
-[![Keras][Keras.js]][Keras-url]
-[![MoviePy][MoviePy.js]][MoviePy-url]
-[![Scikit-learn][Scikit-learn.js]][Scikit-learn-url]
 
 <!-- LICENSE -->
 ## License
