@@ -97,6 +97,16 @@ b. **Output**:
 * The accuracy of each fold of `bass.wsd` is `[22.22, 88.89, 94.44, 94.44, 100.0]`.
 * The average accuracy for `bass.wsd` is `80.0%`.
    
+<!-- Results -->
+## How to Run the Project
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/Naive-Bayes-Word-Sense-Disambiguation.git
+   cd Naive-Bayes-Word-Sense-Disambiguation
+
+
 
 <!-- Results -->
 
@@ -144,5 +154,4 @@ Sali E-loh - [@Sali El-loh](https://www.linkedin.com/in/salielloh12/) - ellohsal
 [Datetime-url]: https://docs.python.org/3/library/datetime.html
 
 
-#  Files in Repository:
 
