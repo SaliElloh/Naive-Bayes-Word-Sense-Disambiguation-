@@ -77,14 +77,12 @@ The primary dataset used in this project consists of instances of the word "plan
 ### Example:
 
 a. **Sentence to be Classified**:  
-   *We made the non-slip surfaces by stippling the tops with a **bass** broom—a fairly new one works best.*
+* *We made the non-slip surfaces by stippling the tops with a **bass** broom—a fairly new one works best.*
 
 b. **Output**:  
-   The count of each sense in `bass.wsd` is `{'bass%fish': 317, 'bass%music': 3182}`.
-   
-   The accuracy of each fold of `bass.wsd` is `[22.22, 88.89, 94.44, 94.44, 100.0]`.
-   
-   The average accuracy for `bass.wsd` is `80.0%`.
+* The count of each sense in `bass.wsd` is `{'bass%fish': 317, 'bass%music': 3182}`.
+* The accuracy of each fold of `bass.wsd` is `[22.22, 88.89, 94.44, 94.44, 100.0]`.
+* The average accuracy for `bass.wsd` is `80.0%`.
    
 
   <!-- GETTING STARTED -->
