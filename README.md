@@ -38,48 +38,58 @@ Until the mid- and late 1970s, there ....  <head> plant </head>  is owned by the
 
 <!-- METHODOLOGY -->
 
-## Methodology:
+## Methodology
 
-### Agorithm Steps:
+### Algorithm Steps
 
-1.Data Preprocessing:
-* Feature Extraction: Stop words, punctuation, and stemming are removed to retain only meaningful words.
-* Normalization: Convert text to lowercase and remove any extra spaces for consistency.
+1. **Data Preprocessing**:
+   - **Feature Extraction**: 
+     - Remove stop words, punctuation, and apply stemming to retain meaningful words.
+   - **Normalization**: 
+     - Convert text to lowercase.
+     - Remove extra spaces to ensure consistency.
 
-2.Data Processing:
-* Instance Grouping: The data is read and grouped by instance ID, associating each target word with its surrounding context.
-* Sense Counting: Word instances are counted for each sense in the training data to build a frequency distribution.
+2. **Data Processing**:
+   - **Instance Grouping**: 
+     - Group data by instance ID, associating each target word with its context.
+   - **Sense Counting**: 
+     - Count word instances for each sense in the training data to build a frequency distribution.
 
-3.Model Training:
-* Dictionary Creation: Separate dictionaries are created for each sense, storing the sentences related to each sense.
-* Word Counting: Calculate the word counts for each sense and the total word count in the training set.
+3. **Model Training**:
+   - **Dictionary Creation**: 
+     - Create separate dictionaries for each sense, storing the sentences related to each sense.
+   - **Word Counting**: 
+     - Calculate word counts for each sense and the total word count in the training set.
 
-4.Model Testing:
+4. **Model Testing**:
+   - **Probability Calculation**: 
+     - Use the Naive Bayes formula to calculate probabilities for each sense based on the training data.
+   - **Sense Assignment**: 
+     - Assign the sense with the highest probability to each instance in the test data.
 
-* Probability Calculation: Using the Naive Bayes formula, probabilities are calculated for each sense based on the training data.
-* Sense Assignment: The sense with the highest probability is assigned to each instance in the test data.
+5. **K-Fold Cross-Validation**:
+   - **Dataset Splitting**: 
+     - Divide the dataset into k folds, using one fold for testing and the remaining folds for training.
+   - **Accuracy Evaluation**: 
+     - Calculate accuracies for each fold and determine the mean accuracy to assess overall model performance.
 
-5.K-Fold Cross-Validation:
+6. **Output Generation**:
+   - **Prediction Storage**: 
+     - Store the predicted senses for each test instance in an output file.
+   - **Result Summary**: 
+     - Print key details about the dataset, sense counts, fold accuracies, and average accuracy.
 
-* Dataset Splitting: The dataset is divided into k folds, with one fold used for testing and the remaining folds for training.
-* Accuracy Evaluation: Accuracies are calculated for each fold, and the mean accuracy is determined to assess overall model performance.
+### Example
 
-6.Output Generation:
-* Prediction Storage: The predicted senses for each test instance are stored in an output file.
-* Result Summary: Key details about the dataset, sense counts, fold accuracies, and average accuracy are printed for each file.
+**Sentence to be Classified**:  
+*We made the non-slip surfaces by stippling the tops with a **bass** broom—a fairly new one works best.*
 
-Example:
+**Output**:  
+The count of each sense in `bass.wsd` is `{'bass%fish': 317, 'bass%music': 3182}`.
 
-**Sentence to be Classified** : We made the non-slip surfaces by stippling the tops with a **bass** broom  a fairly new one works best. 
+The accuracy of each fold of `bass.wsd` is `[22.22, 88.89, 94.44, 94.44, 100.0]`.
 
-**Output**:
-
-the count of each sense in bass.wsd is {'bass%fish': 317, 'bass%music': 3182} 
-
-the accuracy of each fold of bass.wsd are [22.22222222222222, 88.88888888888889, 94.44444444444444, 94.44444444444444, 100.0]
-
-the average accuracy for bass.wsd is 80.0
-
+The average accuracy for `bass.wsd` is `80.0%`.
 
 
   <!-- GETTING STARTED -->
